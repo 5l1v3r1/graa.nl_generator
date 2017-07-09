@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Sipke's log</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="ROBOTS" content="INDEX, FOLLOW">
+		<meta name="description" content="A log on security and life"/>
+		
+		<link rel="stylesheet" type="text/css" href="/css/graa.css" media="all"/>
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="Header">
+				<a href="/">graa</a>
+			</div>
+		</header>
+
+		<section>
+
+			<div class="Content">
+
+[CONTENT]
+
+			</div>
+
+		</section>
+
+	</body>
+
+</html>

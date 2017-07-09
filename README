@@ -1,0 +1,5 @@
+a) Create articles in templates/articlesPub
+b) Run generator script generator/generateGraaStatic.py
+c) Copy static/ to webroot
+
+See docs/ for docs

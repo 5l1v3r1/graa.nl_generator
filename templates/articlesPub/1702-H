@@ -1,0 +1,41 @@
+Trainpooling
+
+May, 2014
+
+Back in 2014 I thought of a hack for the Dutch train system that I call trainpooling. It's a simple hack that utilizes the design of the OV-chipkaart system to swap two groups of people between cities for the price of two tickets.
+
+Users of the OV-chipkaart system have cards that allow them to travel by train. If they travel from station A to station B, they have to check in at A and check out at B. Checking in- and out is done by swiping a card over a sensor, that flags the card as being checked in (or out) at that station. Sometimes a train conductor checks if people have valid tickets.
+
+After you check in at a station, you can disable your check-in within an hour at the same station. A disabled check-in doesn't result in any traveling costs. This is the main part of the OV-chipkaart design that allows trainpooling.
+
+Imagine two groups of travelers, both with an OV-chipkaart, located at two stations 10 minutes apart:
+<pre>
+<b>[station A]			--- 10 minutes ---		[station B]
+[group A, card A]						[group B, card B]</b>
+</pre>
+The following steps describe how to swap the two groups between the stations.<br>
+Person A1 checks in with card A at station A, travels to station B, and hands card A to person B1.
+<pre>
+<b>[station A]
+[group A0..An-1]<br>
+[station B]
+[group B, person A1, card A, card B]</b>
+</pre>
+Person B1 checks in with card B at station B, travels to station A with both cards, and checks out card A. The trip for card A is canceled. B1 waits for 100 seconds, then checks card A in again, and hands both cards to A2.
+<pre>
+<b>[station A]
+[group A0..An-1, B1, card A and B]<br>
+[station B]
+[group B0..Bn-1, person A1]</b>
+</pre>
+A2 takes both cards to station B, checks out card B so that card B's trip is canceled, waits 100 seconds, checks card B in, hands over the two cards to person B2.
+<pre>
+<b>[station A]
+[group A0..An-2, B1]<br>
+[station B]
+[group B0..Bn-1, person A1 and A2, card A and B]</b>
+</pre>
+
+They can continue in this manner until all people are transferred. For the final trips, you check the card out at the opposing station, paying for that trip. The two cards are nessisary because everyone requires a valid train ticket. At the end, if the groups are of even numbers, person A and B can even get their original cards back. 
+
+Trainpooling can also be used to transfer one group to another station, as long as there is one person at each station at the start, both with a separate OV-chipcard. Transferring people in parallel is also possible of course.

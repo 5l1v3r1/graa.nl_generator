@@ -1,0 +1,10 @@
+articleTypes
+	P, Programming
+	M, Meta
+	S, Security
+	N, Nature
+	R, Random
+	H, Hacking
+	ADV, Advisory
+configuration
+	workingDir, /foo/bar

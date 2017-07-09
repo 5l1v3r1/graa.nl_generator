@@ -1,0 +1,7 @@
+The configuration for graa.nl is located in meta/. The data should be in the following format:
+
+articleTypes
+	P, Programming
+
+This wil result in an dictionary of articleTypes = {'P':'Programming'} after parsing
+
