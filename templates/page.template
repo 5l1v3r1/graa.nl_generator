@@ -31,6 +31,14 @@
 
 		</section>
 
+		<footer>
+			<div class="Footer">
+				<a href="/rss.xml">
+					<img src="/img/rss.png" width="36" height="14">
+				</a>
+			</div>
+		</footer>
+
 	</body>
 
 </html>

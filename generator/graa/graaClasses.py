@@ -1,5 +1,8 @@
 from functions import *
 
+# for escaping rss feeds
+from xml.sax.saxutils import escape as xmlescape
+
 
 class graaArticleAutoFormatter(object):
 	""" Class for automatically formatting articles with HTML """
@@ -12,7 +15,7 @@ class graaArticleAutoFormatter(object):
 		''' Simple check for date line in the format "month, year" '''
 
 		parts = v.split(",")
-		if len(parts) == 2:
+		if len(parts) == 2 or len(parts) == 3:
 			if len(parts[0]) <= 10:
 				try:
 					test = int(parts[-1])
@@ -37,15 +40,17 @@ class graaArticleAutoFormatter(object):
 			if len(v) < 3:
 				continue
 
-			# is it a date? make it small
-			if self.isDate(v):
-				paragraphs[index] = "<small>%s</small>" % v
-				continue
+			if len(paragraphs[index].split("\n")) == 1:
 
-			# is it a heading?
-			if len(paragraphs[index].split(" ")) < 8 and paragraphs[index][-1] not in ['.',':']:
-				paragraphs[index] = "<br><h3>%s</h3>" % v
-				continue
+				# is it a date? make it small
+				if self.isDate(v):
+					paragraphs[index] = "<small>%s</small>" % v
+					continue
+
+				# is it a heading?
+				if len(paragraphs[index].split(" ")) < 8 and paragraphs[index][-1] not in ['.',':']:
+					paragraphs[index] = "<br><h3>%s</h3>" % v
+					continue
 
 			# surround normal paragraphs with <p>
 			paragraphs[index] = "<p>%s</p>" % v.replace("\n","<br>")
@@ -81,6 +86,9 @@ class graaPageGen(object):
 		self.publicArticleTemplates = getFilesFromPath("%s/articlesPub/" % self.templateDir)
 		self.sortedArticleNames = self.getSortedArticleNames()
 
+		self.rssFeedTemplate = getFileContent( "%s/rss.xml.template" % self.templateDir )
+		self.rssFeedItemTemplate = getFileContent( "%s/rss.xml.item.template" % self.templateDir )
+
 
 	def getReadableArticleType(self, articleName):
 		''' Return readable version of article name '''
@@ -99,10 +107,45 @@ class graaPageGen(object):
 
 
 	def generatePages(self):
-		''' Generate main page and articles '''
+		''' Generate main page, articles and RSS '''
 
 		self.genMainPage()
 		self.genArticles()
+		self.generateRSS()
+
+
+	def generateRSS(self):
+		''' Generate RSS feed '''
+
+		items = []
+		guidCounter = 0
+
+		for articleName in self.sortedArticleNames:
+
+			parts = self.publicArticleTemplates[articleName].split("\n")
+			headLine = xmlescape(parts[0])
+			articleType = self.getReadableArticleType(articleName)
+
+			URLTest = parts[1]
+			if len(URLTest) > 5 and URLTest[:4] == 'http':
+				urlToArticle = URLTest
+			else:
+				urlToArticle = xmlescape('https://www.graa.nl/articles/%s.html' % articleName)
+
+			tmp = self.rssFeedItemTemplate
+			tmp = tmp.replace("[RSS_ITEM_TITLE]", headLine)
+			tmp = tmp.replace("[RSS_ITEM_LINK]", urlToArticle)
+			tmp = tmp.replace("[RSS_ITEM_CATEGORY]", xmlescape(articleType))
+			tmp = tmp.replace("[RSS_ITEM_GUID]", urlToArticle)
+
+			guidCounter += 1
+
+			items.append(tmp)
+
+
+		fullRSS = self.rssFeedTemplate.replace("[RSS_ITEMS]", "\n".join(items))
+		writeFileContent("%s/rss.xml" % self.webroot, fullRSS )
+
 
 
 	def genMainPage(self):
@@ -136,6 +179,12 @@ class graaPageGen(object):
 		''' Generate and autoformat article files '''
 
 		for articleName in self.sortedArticleNames:
+
+			parts = self.publicArticleTemplates[articleName].split("\n")
+			URLTest = parts[1]
+			if len(URLTest) > 5 and URLTest[:4] == 'http':
+				continue
+
 			fullPath = "%s/%s.html" % (self.articleWebroot, articleName)
 			articleContent = self.articleAutoFormatter.autoFormatArticle( self.publicArticleTemplates[articleName] )
 			writeFileContent(fullPath, self.pageTemplate.replace('[CONTENT]',articleContent))
