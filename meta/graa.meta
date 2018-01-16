@@ -5,6 +5,7 @@ articleTypes
 	N, Nature
 	R, Random
 	H, Hacking
+	L, Life
 	ADV, Advisory
 configuration
 	workingDir, /foo/bar

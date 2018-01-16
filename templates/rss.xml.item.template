@@ -1,0 +1,6 @@
+<item>
+    <title>[RSS_ITEM_TITLE]</title>
+    <link>[RSS_ITEM_LINK]</link>
+	<category>[RSS_ITEM_CATEGORY]</category> 
+	<guid>[RSS_ITEM_GUID]</guid> 
+</item>

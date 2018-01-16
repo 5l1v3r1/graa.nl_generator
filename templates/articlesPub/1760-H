@@ -1,0 +1,32 @@
+Kobo Aura H2O hacking
+
+September, 2017
+
+Recently I bought a book that turned out to be not quite of the quality I was expecting. To minimize such disappointment in the future, I bought an e-reader to proof-read books before buying them. I got the Kobo Aura H2O (second edition), which turned out to be neatly hackable!
+
+These days every device requires you to create an account before you can use it. If you're like me, you just want to slap a PDF on the device and read it, without having to deal with this crap.
+
+There are a lot of Kobo-hacks to be found. My only interest was bypassing the registration process. <a href="https://wiki.mobileread.com/wiki/Kobo_WiFi_Hacking">This page</a> shows a quick fix for faking the registration on older Kobo devices, but the Kobo Aura H2O has a different user table format. I recommend installing your device the normal way before tweaking it. Also, always make a backup before messing with your electronics.
+
+Bypassing the registration process - Short version
+
+On a Macbook it's:
+<pre>echo "INSERT INTO user VALUES('ID','Masterkey','Spip','lolnomail','',NULL,'false','false','false','RefreshToken','AuthToken','Bearer','','false','SyncContinuationToken',1,NULL,NULL,'4.5.6404');" | sqlite3 /Volumes/KOBOeReader/.kobo/KoboReader.sqlite</pre>
+
+Bypassing the registration process - Long version
+
+ - Go to settings -> account and select logout. This will reboot the device. 
+
+ - When the device is booted, select "I don't have WiFi", connect the device to a computer, and select 'connect' on the Kobo. The reader will act as a USB disk drive with the name KOBOeReader. On my Mac its location is /Volumes/KOBOeReader/. This directory contains a hidden folder named .kobo, which stores all the juicy Kobo things.
+
+ - Open the Kobo reader database by executing:<pre>sqlite3 /Volumes/KOBOeReader/.kobo/KoboReader.sqlite</pre> - Execute the following SQLite statement:
+<pre>INSERT INTO user VALUES('ID','Masterkey','Spip','lolnomail','',NULL,'false','false','false','RefreshToken','AuthToken','Bearer','','false','SyncContinuationToken',1,NULL,NULL,'4.5.6404');</pre>
+
+ - Exit sqlite (.q), unplug the device and wait for it to reboot. It should think it's logged in now.
+
+Security wise
+
+Note that if you don't set a security PIN, anyone with physical access to your device can easily push firmware and read your authentication tokens from the user table.
+
+The firmware can be downloaded from:
+<pre>http://download.kobobooks.com/firmwares/kobo6/July2017/kobo-update-4.5.9587.zip</pre>This is the latest firmware at the time of writing.

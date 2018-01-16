@@ -1,0 +1,13 @@
+Fixing the <i>critical software update</i> OSX install message
+
+November, 2017
+
+Last week I re-installed a Macbook Pro with a touch bar. This was done using recovery mode, wiping the disk, and performing a clean install. You would think this is basic stuff. What can go wrong? Well, after the installation I got an error message saying <i>A critical software update is required for your Mac</i>, and I couldn't continue with the installation.
+
+Fix and cause
+
+Boot in <a href="https://support.apple.com/ro-ro/HT201255">safe mode</a>, and continue the installation. This fixed the problem for me.
+
+The error comes from a problem with the touch bar that comes with new Macbooks. If you Google the error, you see a lot of end users panicking with good reason. Some users seem to get this problem after performing some update. <a href="http://blog.eriknicolasgomez.com/2016/11/27/the-untouchables-apples-new-os-activation-for-touch-bar-macbook-pros/">This blog</a> entry from Erik Gomez gives an in-depth explanation of the problem. As it turns out, the new Macbook comes with software for the touch bar, called EmbeddedOS. This is shipped with the mac on your main disk. However, the installer package for OSX doesn't properly install this software, and it also seems to be missing from internet recovery. Thus, if you clear your disk and try to install OSX again, the Macbook will be unable to use the touch bar. It sees this as a critical issue and refuses to continue booting. Some fixes are also explained <a href="http://blog.eriknicolasgomez.com/2016/11/30/the-untouchables-pt-2-offline-touchbar-activation-with-a-purged-disk/">here</a>.
+
+When booting in safe mode the Macbook doesn't seem to care that it can't use the touch bar, and continues the installation. For some reason it manages to fix itself after the installation, working with touch bar and all. At least, this is my experience. So there you go. I hope this helps other people facing this error.

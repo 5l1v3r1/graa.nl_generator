@@ -1,0 +1,18 @@
+Hoe begin je 2018 veilig op internet?
+
+december, 2017
+
+After reporting some <a href="https://tweakers.net/nieuws/132701/vtech-dicht-beveiligingslekken-in-kindertablet.html">vulnerabilities</a> I found during <a href="https://sumofpwn.nl/">SOP</a> to a newspaper, they ask me to give some general internet safety tips for 2017-2018. The <a href="https://s.vk.nl/s-a4545751/">article</a> contains a few of my practical tips. Here is the complete (Dutch) text I sent in regarding internet safety for the public.
+
+Hoe beweeg ik me anno 2017 nog veilig op internet?
+
+Beveiligen heeft alleen zin als je ergens waarde aan hecht.
+
+Automatisering is er om dingen makkelijker te maken. Het hoort geen vervanging te zijn voor je sociale leven. Het hoeft geen klauwen met geld te kosten. De meeste mensen zouden zich op internet kunnen redden met een Raspberry Pi van een paar tientjes.
+
+Van die smartwatch of sportarmband voor je smartphone wordt alleen je portemonnee lichter. Denk je dat je er beter van gaat rennen? Of heb je hem gekocht om ‘sociaal’ te doen? Wil je je stappen sharen op Facebook, zodat je iets hebt om over te praten? Je had ook naar je internet-buddies toe kunnen lopen om een praatje te maken over hoeveel geld je over hebt. Kost niks, bereikt hetzelfde.
+
+Die duizend Instagram-foto's van je eten ga je echt niet aan je kleinkinderen laten zien. Maak een backup of twee van je belangrijkste assets. Accepteer dat je de rest verliest. Verwijder het als je je daar goed bij voelt.
+
+Mijn gouden tip is: laat internet lekker en ga buiten spelen met anderen. Maar als het dan toch moet:
+Gebruik TLS, accepteer geen false certificaat-meldingen, gebruik 2FA en een wachtwoord manager, kies sterke wachtwoorden, update al je devices, klik niet op rare emails, maak backups, versleutel je backups, gebruik disk encryption, lock je device, doe regelmatig een virus-scan, check WPS- en UPnP-settings, verander standaard wachtwoorden, zet je firewall aan, beperk de rechten van je apps, installeer een pop-up blokker en een privacy-goodie, voorkom public-access op je S3 buckets, save je bitcoins in cold storage, Google "Wet bewaarplicht telecommunicatiegegevens" en "Drive-by downloads", snap dat de enige mensen op internet die om je geven dezelfde mensen zijn die je negeert als je met ze probeert in contact te komen terwijl je naar je telefoon staart. Weet waar je waarde aan hecht, ga lekker buiten spelen. En dan hopen dat je laptop niet wordt gejat.

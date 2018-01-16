@@ -1,0 +1,57 @@
+Reflected Cross-Site Scripting in CM4ALL
+
+Graa, July, 2017
+
+Description
+
+CM4All 2.3.5 is affected by multiple reflected Cross-Site Scripting vulnerabilities. Succesful exploitation of such a vulnerability allows an attacker to take over the session of an authenticated user. Access to a user's session allows the attacker to perform any action as that user. For exploitation an authenticated user has to click on a link provided by the attacker, or get redirected from an attacker controlled domain.
+
+Tested version
+
+This issue was tested on CM4All 2.3.5.
+
+Fixed versions
+
+This issue is fixed in versions 2.3.9 and 3.x.
+
+Vulnerability details
+
+CM4All 2.3.5 takes user input from URL-parameters and processes them insecurely in the DOM of the browser. An example of this can be seen in logout.htmlc, where the wdygt parameter is used to redirect a user to an external web page.
+
+<pre>
+/.cm4all/s/static/html/logout.htmlc
+var _wtgt = url.getParameter("wtgt", url.getParameter("wdygt", ""));
+var wtgt = "/logout_done";
+if (_wtgt) {
+    lurlz.unshift(wtgt);
+    wtgt = _wtgt;
+}
+var testFunction = function(pos) {
+    var x = lurlz.pop();
+    if (x) {
+        lord(x);
+    } else {
+        document.location.replace(wtgt);
+</pre>
+
+The javascript above replaces document.location with the value from the parameter wdygt. An attacker can utilize the javascript URL scheme to execute arbitrary javascript when the page is opened.
+
+A different example is the a-parameter in the file wait.htmlc. This parameter is fed to the eval method, which of course allows attacker to inject arbitrary javascript.
+
+<pre>
+/.cm4all/s/assets/html/wait.htmlc
+function init(){
+    var url = new cm4all.HttpURL(document.location.href);
+    var poll = url.getParameter("u");
+    var errorMessage = url.getParameter("e");
+    var errorRedirect = url.getParameter("er");
+    var ajaxOptions = url.getParameter("a");
+    waitFor(poll,ajaxOptions ? eval(ajaxOptions)
+</pre>
+
+Timeline
+
+15-02-2017: Notified company using the software. Company redirected advisory to CM4All.
+03-05-2017: CM4All notified company that update should be ready.
+05-06-2017: Upgrade postponed for 4 weeks, because critical bugs were found during first deployment.
+11-07-2017: Hotfix successfully rolled out.

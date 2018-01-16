@@ -1,0 +1,39 @@
+Compiling a Monero miner on OSX
+
+December, 2017
+
+This month I got interested in mining cryptocurrency - for obvious reasons - and chose to mine some Monero. A few of my VPS's are running the sofware. It's fun to see how fast they're going. I went on benchmarking some devices, like a VPS, a Raspberry Pi and a laptop. Results will be pushed to <a href="http://monerobenchmarks.info">monerobenchmarks.info</a>. For now I want to share some solutions to errors I ran into while compiling for OSX. 
+
+The Monero miner I use can be found on <a href="https://github.com/OhGodAPet/cpuminer-multi">github.com/OhGodAPet/cpuminer-multi</a>.
+
+First up is solution for the libcurl library. In configure.ac, comment out these lines:
+<pre>LIBCURL_CHECK_CONFIG(, 7.15.2, ,
+AC_MSG_ERROR([Missing required libcurl >= 7.15.2]))</pre>
+And directly under those lines, add: 
+<pre>LIBCURL="/usr/local/opt/curl/lib/libcurl.dylib"
+LIBCURL_CPPFLAGS="-I/usr/local/opt/curl/include"
+AC_SUBST(LIBCURL)
+AC_SUBST(LIBCURL_CPPFLAGS)</pre>
+
+This was taken from an <a href="https://github.com/jgarzik/cpuminer/issues/34#issuecomment-22858719">issue</a> in a bitcoin miner.
+
+Next up, edit Makefile.am and remove these arguments for AM_CFLAGS:
+
+<pre>-ftree-loop-if-convert-stores
+-fbranch-target-load-optimize2
+-fsched2-use-superblocks</pre>
+
+This will prevent errors for unsupported options. Else you get errors like "<i>clang: error: unknown argument:</i>", as discussed <a href="https://bitcointalk.org/index.php?topic=632724.575">here</a>.
+
+Now you should be able to do something like this:
+<pre>port install libtool autoconf automake curl
+git clone https://github.com/OhGodAPet/cpuminer-multi.git
+cd cpuminer-multi
+./autogen.sh
+CFLAGS="-Ofast -march=native" ./configure
+make</pre>
+
+Mining can be done with the command:
+<pre>/minerd -a cryptonight -o pool-address -u monero-address -p x -t 4</pre>
+
+Next up for benchmarking are my phone and TV.

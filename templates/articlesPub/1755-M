@@ -1,0 +1,5 @@
+Added RSS feed
+
+July, 2017
+
+I've added a Really Simple method for generating an RSS feed. Most information I got from <a href="https://www.w3schools.com/xml/xml_rss.asp">w3schools</a>. There was a hick-up with XML-escaping, luckily the neat xmlescape method from the Python package xml.sax.saxutils was perfect for this. Also, it turns out that the 'guid' element can just be the URL to an article. 
