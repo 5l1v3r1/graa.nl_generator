@@ -1,0 +1,61 @@
+To set currents in motion
+
+November, 2018
+
+A passion for the electronic world is found in minds ranging from the malicious to the saints. As an electronic entreprenerd it is my task to inform you about the possibilities of strange machines behaving in unforeseen ways. But to grasp these concepts one must first understand the passion they arise from. For without this insight you would be a mere observer with static knowledge. You'll repeat words like "awareness" and "segmentation" because I gave them to you, but the meaning behind them would remain void. Let's try a different approach, as I shall grant you some insight into the passion that produced these words, in the hope that you can think of your own.
+
+Creating complex systems is a hard problem. Logic and design limitations such as the Diamond Problem are a thorn in the side of any programmer trying to categorize an application's structure. The Bin Packing Problem stares us in the face as we can't even fathom an algorithm to optimally fit things in a box. And yet we’ve yielded this dark magic to automate the most serious of systems. Communication services, exchanges of currencies, transport, politics, and the infrastructure we rely on for warmth and water. Such aggressive expansion is not to be taken lightly, as these electronic wings fly us closer and closer to the sun. Accidental flaws in software and hardware design caused many of us to check out of existence. [1][2][3]
+
+Programming these systems is quite the super power indeed. Orchestrating the behavior of transistors in the billions requires a conductor with extraordinary creativity. These armies of electrons will follow lain out logic-paths very precisely. Guide them wrong and they will death spiral in an endless loop, dragging your entire system with them. And one is never alone in a computer. Hardware designers, creators of operating systems and the builders of helpful programs all have their little armies swarming around in your machine. Instructing these masses to coexist peacefully forces programmers to become electronic diplomats. [4]
+
+The beauty and depth of our technology is often overlooked by their consumers. GPS calculations involve the bending of space-time - also called time dilation - to figure out where you are on the planet. Your Wi-Fi setup probably supports 802.11n, which will transmit data via multiple antennas at the same time to increase transmission speed. The amount of effort and thinking that went into building these systems required thousands of unsung heroes. [5][6]
+
+With great complexity comes great confusion. Recently it was discovered that Helium gas made iPhones behave strangely. Bits in your computer's RAM can flip because of the universe's background radiation. Hackers love these machines and their properties. The study of weird machines is an inspiring art. Sadly, this passion is often confused with malicious intent, like the Hacker Manifesto depicts. This is partially caused by many that actually abuse the fruits of this thirst for knowledge for selfish actions or downright evil. [7][8][9]
+
+You won't believe the ingenuity of some attacks. Vulnerabilities are discovered in all layers of systems, from simple software logic flaws to the electromagnetic radiation that chips can produce. For example, timing attacks can be used to recreate what you typed from the sound of your keyboard. And the sound in a room can be recorded by pointing a laser at the room's window and measuring the vibrations.
+Or try the Rowhammer attack. RAM is temporary memory on a computer, and it is set up in rows on a little chip. Rowhammer utilizes the fact that these rows have been built so close to each other that they can cause electromagnetic interference in other rows. The attack makes two adjacent rows turn on and off really fast to make a certain bit flip. Flipping a single bit allows an attacker to take full control of a system. [10][11][12][13]
+
+Now, imagine you have a company, or some facility. You put in a bunch of computer systems, connect them to existing infrastructure, and hire third parties for maintenance. Hundreds of programmers created little parts of the software. Your hardware is composed of multiple layers, all created by who-knows. Without even messing up the system's configuration there are hundreds of attack vectors ranging from something easy, like asking an administrator for a password, to the downright insane, like measuring electromagnetic radiation to perform a side-channel attack to extract cryptographic keys. This is why you need a security professional. Not just some guy that can run a script or a scanning tool. I'm talking about someone who understands what all of the above means. He or she understands that 'securing' a system is impossible; you can only mitigate risks. And I'll give you advice on how to improve the level of security, and you can try and implement mitigating measures. Just keep in mind that there will be unknowns: unknown properties of your system that are out of our view. We must both accept that these properties exist to understand what it means to secure something. 
+
+References and further reading
+
+[1] The Diamond Problem
+<a href="https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem">https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem</a>
+
+[2] The Bin Packing Problem (fitting things in a container)
+<a href="https://en.wikipedia.org/wiki/Bin_packing_problem">https://en.wikipedia.org/wiki/Bin_packing_problem</a>
+
+[3] Links to examples of fatal software bugs
+<a href="http://www.cs.tau.ac.il/~nachumd/horror.html">http://www.cs.tau.ac.il/~nachumd/horror.html</a>
+<a href="http://www.baselinemag.com/c/a/Projects-Processes/Eight-Fatal-SoftwareRelated-Accidents">http://www.baselinemag.com/c/a/Projects-Processes/Eight-Fatal-SoftwareRelated-Accidents</a>
+<a href="https://www.wired.com/2005/11/historys-worst-software-bugs/">https://www.wired.com/2005/11/historys-worst-software-bugs/</a>
+
+[4] Death spiral (ant mill)
+<a href="https://en.wikipedia.org/wiki/Ant_mill">https://en.wikipedia.org/wiki/Ant_mill</a>
+
+[5] GPS
+<a href="https://en.wikipedia.org/wiki/Global_Positioning_System">https://en.wikipedia.org/wiki/Global_Positioning_System</a>
+
+[6] 802.11n data encoding 
+<a href="https://en.wikipedia.org/wiki/IEEE_802.11n-2009#Data_encoding">https://en.wikipedia.org/wiki/IEEE_802.11n-2009#Data_encoding</a>
+
+[7] Helium affecting iPhone
+<a href="https://arstechnica.com/gadgets/2018/10/helium-implicated-in-weird-iphone-malfunctions/">https://arstechnica.com/gadgets/2018/10/helium-implicated-in-weird-iphone-malfunctions/</a>
+
+[8] Bitsquatting
+<a href="http://dinaburg.org/bitsquatting.html">http://dinaburg.org/bitsquatting.html</a>
+
+[9] Hacker manifesto
+<a href="http://phrack.org/issues/7/3.html">http://phrack.org/issues/7/3.html</a>
+
+[10] Side-channel attacks on electronic radiation
+<a href="https://en.wikipedia.org/wiki/Electromagnetic_attack#Electromagnetic_Radiation">https://en.wikipedia.org/wiki/Electromagnetic_attack#Electromagnetic_Radiation</a>
+
+[11] Obtaining keystrokes from sound
+<a href="https://www.inf.ed.ac.uk/publications/thesis/online/IM100855.pdf">https://www.inf.ed.ac.uk/publications/thesis/online/IM100855.pdf</a>
+
+[12] Laser microphone
+<a href="https://en.wikipedia.org/wiki/Laser_microphone">https://en.wikipedia.org/wiki/Laser_microphone</a>
+
+[13] Rowhammer attack
+<a href="https://en.wikipedia.org/wiki/Row_hammer">https://en.wikipedia.org/wiki/Row_hammer</a>

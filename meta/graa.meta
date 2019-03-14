@@ -2,9 +2,10 @@ articleTypes
 	P, Programming
 	M, Meta
 	S, Security
-	N, Nature
+	E, Electronics
 	R, Random
 	H, Hacking
+	T, Tutorial
 	L, Life
 	ADV, Advisory
 configuration

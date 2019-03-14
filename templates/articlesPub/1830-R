@@ -1,0 +1,51 @@
+Secure Diffie–Hellman parameters for Lighttpd with SNI
+
+August, 2018
+
+TL;DR You need to put your dh-file configuration before your SNI configuration.
+
+<=1024 bit DH keys are known to be crackable partially due to the Logjam attack. A strong TLS configuration for a Diffie-Hellman key exchange uses keys larger than 1024 bit. For more information see <a href="https://weakdh.org/sysadmin.html">weakdh.org</a>.
+
+In lighttpd you can point the option ssl.dh-file to the file that contains your DH parameters. You can generate such a file like this:
+
+<pre>openssl dhparam -out dhparam.pem -outform PEM -2 2048</pre>
+
+To test if your server uses a strong DH group, you can use the openssl command:
+<pre>openssl s_client -connect www.domain.com:443 -cipher "EDH" | grep "Server Temp Key"</pre>
+
+I tried deploying my configuration by putting the DH parameters per domain for SNI. 
+<b>This configuration is wrong, don't use it</b>
+
+<pre>$HTTP["host"] == "www.domainA.nl" {
+ ssl.pemfile = "/etc/letsencrypt/live/www.domainA.nl/domainA.nl.pem"
+ ssl.ca-file = "/etc/letsencrypt/live/www.domainA.nl/fullchain.pem"
+ ssl.dh-file = "/etc/letsencrypt/live/www.domainA.nl/dhparam.pem"
+}
+$HTTP["host"] == "www.domainB.nl" {
+ ssl.pemfile = "/etc/letsencrypt/live/www.domainB.nl/domainB.nl.pem"
+ ssl.ca-file = "/etc/letsencrypt/live/www.domainB.nl/fullchain.pem"
+ ssl.dh-file = "/etc/letsencrypt/live/www.domainB.nl/dhparam.pem"
+}</pre>
+
+Your dh-file should go <b>before</b> the SNI configuration. 
+<b>The configuration below works.</b>
+
+<pre>$SERVER["socket"] == ":443" {
+ ssl.engine  = "enable"
+ ssl.pemfile = "/etc/letsencrypt/live/www.domainA.nl/domainA.nl.pem"
+ ssl.dh-file = "/etc/letsencrypt/live/www.domainA.nl/dhparam.pem"
+ ssl.ec-curve = "secp384r1"
+ ssl.cipher-list = "EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH"
+ ssl.honor-cipher-order = "enable"
+ ssl.use-compression = "disable"
+ ssl.use-sslv3 = "disable"
+ ssl.use-sslv2= "disable"
+ $HTTP["host"] == "www.domainA.nl" {
+  ssl.pemfile = "/etc/letsencrypt/live/www.domainA.nl/domainA.nl.pem"
+  ssl.ca-file = "/etc/letsencrypt/live/www.domainA.nl/fullchain.pem"
+ }
+ $HTTP["host"] == "www.domainB.nl" {
+  ssl.pemfile = "/etc/letsencrypt/live/www.domainB.nl/domainB.nl.pem"
+  ssl.ca-file = "/etc/letsencrypt/live/www.domainB.nl/fullchain.pem"
+ }
+}</pre>

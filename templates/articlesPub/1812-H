@@ -1,0 +1,49 @@
+Fixing this fucking "couldn't get 'max filedescriptors'" error
+
+April, 2018
+
+After installing some packages on my Debian VPS, I couldn't reboot my webservice (lighttpd). This error kept appearing:
+<pre>2018-04-12 19:34:00: (server.c.1201) couldn't get 'max filedescriptors' Function not implemented</pre>
+After searching the interwebz I could not find a proper fix. A solution seemed nowhere to be found, so I just downloaded lighttpd and statically set the max filedescriptor like this in server.c:
+<pre>srv->max_fds = 1024 //rlim.rlim_cur;</pre>
+Just comment out all the surrounding code, and it works! I hope this helps others.
+
+For clearance, here is the source code I commented out:
+<pre>
+1189	                if (0 != getrlimit(RLIMIT_NOFILE, &rlim)) {
+1190	                        log_error_write(srv, __FILE__, __LINE__,
+1191	                                        "ss", "couldn't get 'max filedescriptors'",
+1192	                                        strerror(errno));
+1193	                        return -1;
+1194	                }
+1195	
+1196	                /**
+1197	                 * if we are not root can can't increase the fd-limit above rlim_max, but we can reduce it
+1198	                 */
+1199	                if (use_rlimit && srv->srvconf.max_fds
+1200	                    && (i_am_root || srv->srvconf.max_fds <= rlim.rlim_max)) {
+1201	                        /* set rlimits */
+1202	
+1203	                        rlim.rlim_cur = srv->srvconf.max_fds;
+1204	                        if (i_am_root) rlim.rlim_max = srv->srvconf.max_fds;
+1205	
+1206	                        if (0 != setrlimit(RLIMIT_NOFILE, &rlim)) {
+1207	                                log_error_write(srv, __FILE__, __LINE__,
+1208	                                                "ss", "couldn't set 'max filedescriptors'",
+1209	                                                strerror(errno));
+1210	                                return -1;
+1211	                        }
+1212	                }
+1213	
+1214	                        srv->max_fds = rlim.rlim_cur;
+1215	                        /*(default upper limit of 4k if server.max-fds not specified)*/
+1216	                        if (i_am_root && 0 == srv->srvconf.max_fds && rlim.rlim_cur > 4096)
+1217	                                srv->max_fds = 4096;
+1218	
+1219	                /* set core file rlimit, if enable_cores is set */
+1220	                if (use_rlimit && srv->srvconf.enable_cores && getrlimit(RLIMIT_CORE, &rlim) == 0) {
+1221	                        rlim.rlim_cur = rlim.rlim_max;
+1222	                        setrlimit(RLIMIT_CORE, &rlim);
+1223	                }
+</pre>
+

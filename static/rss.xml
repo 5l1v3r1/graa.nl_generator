@@ -4,12 +4,60 @@
 <channel>
   <title>Graa.nl RSS feed</title>
   <link>https://www.graa.nl</link>
-  <description>A log on security and life</description>
+  <description>Sipke's tech log</description>
   <item>
-    <title>Spot The Bug challenge 2018 PoW</title>
-    <link>https://www.graa.nl/articles/1810-H.html</link>
+    <title>Only log required data for WPA cracking (aircrack-ng / airodump)</title>
+    <link>https://github.com/DutchGraa/aircrack-ng/commit/ad349b9fcfa4bdcff864434b92d3c72881e3eabe</link>
+	<category>Programming</category> 
+	<guid>https://github.com/DutchGraa/aircrack-ng/commit/ad349b9fcfa4bdcff864434b92d3c72881e3eabe</guid> 
+</item>
+<item>
+    <title>Loracrack - LoRaWAN session cracker</title>
+    <link>https://github.com/DutchGraa/Loracrack</link>
 	<category>Hacking</category> 
-	<guid>https://www.graa.nl/articles/1810-H.html</guid> 
+	<guid>https://github.com/DutchGraa/Loracrack</guid> 
+</item>
+<item>
+    <title>To set currents in motion</title>
+    <link>https://www.graa.nl/articles/1866-S.html</link>
+	<category>Security</category> 
+	<guid>https://www.graa.nl/articles/1866-S.html</guid> 
+</item>
+<item>
+    <title>Secure Diffie–Hellman parameters for Lighttpd with SNI</title>
+    <link>https://www.graa.nl/articles/1830-R.html</link>
+	<category>Random</category> 
+	<guid>https://www.graa.nl/articles/1830-R.html</guid> 
+</item>
+<item>
+    <title>Self-replicating binary infecting Mach-O files</title>
+    <link>https://github.com/DutchGraa/simpvir</link>
+	<category>Hacking</category> 
+	<guid>https://github.com/DutchGraa/simpvir</guid> 
+</item>
+<item>
+    <title>Programming the Razer Tartarus Chroma on Linux</title>
+    <link>https://github.com/DutchGraa/Razer-USB-tartarus</link>
+	<category>Hacking</category> 
+	<guid>https://github.com/DutchGraa/Razer-USB-tartarus</guid> 
+</item>
+<item>
+    <title>Fixing this fucking "couldn't get 'max filedescriptors'" error</title>
+    <link>https://www.graa.nl/articles/1812-H.html</link>
+	<category>Hacking</category> 
+	<guid>https://www.graa.nl/articles/1812-H.html</guid> 
+</item>
+<item>
+    <title>Postfix mail bot for helping setting up PGP encrypted mail</title>
+    <link>https://github.com/DutchGraa/PGPMailbot</link>
+	<category>Programming</category> 
+	<guid>https://github.com/DutchGraa/PGPMailbot</guid> 
+</item>
+<item>
+    <title>Spot The Book</title>
+    <link>https://github.com/DutchGraa/Spot-The-Book</link>
+	<category>Security</category> 
+	<guid>https://github.com/DutchGraa/Spot-The-Book</guid> 
 </item>
 <item>
     <title>Spot The Bug challenge 2018 warm-up</title>
@@ -61,9 +109,9 @@
 </item>
 <item>
     <title>Stupid things people say</title>
-    <link>https://www.graa.nl/articles/1761-L.html</link>
-	<category>Life</category> 
-	<guid>https://www.graa.nl/articles/1761-L.html</guid> 
+    <link>https://www.graa.nl/articles/1761-R.html</link>
+	<category>Random</category> 
+	<guid>https://www.graa.nl/articles/1761-R.html</guid> 
 </item>
 <item>
     <title>Kobo Aura H2O hacking</title>

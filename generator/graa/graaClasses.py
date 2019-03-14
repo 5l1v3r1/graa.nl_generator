@@ -97,6 +97,13 @@ class graaPageGen(object):
 		return self.configuration['articleTypes'][articleTypeIdentifier]
 
 
+	def getArticleYear(self, articleName):
+		''' Return year of article from name '''
+
+		year = articleName.split('-')[0][:2]
+		return '20' + year
+
+
 	def getSortedArticleNames(self):
 		''' Sort names of articles (Descending) '''
 
@@ -170,9 +177,12 @@ class graaPageGen(object):
 			articleType = self.getReadableArticleType(articleName)
 			tmpLink = tmpLink.replace('[TYPE]', articleType)
 
+			articleYear = self.getArticleYear(articleName)
+			tmpLink = tmpLink.replace('[YEAR]', articleYear)
+
 			mainContent.append(tmpLink)
 
-		writeFileContent(self.mainPageFile, self.pageTemplate.replace('[CONTENT]', "<table>%s</table>" % ''.join(mainContent)))
+		writeFileContent(self.mainPageFile, self.pageTemplate.replace('[CONTENT]', "<center><table>%s</table></center>" % ''.join(mainContent)))
 
 
 	def genArticles(self):
