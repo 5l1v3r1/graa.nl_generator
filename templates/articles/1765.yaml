@@ -1,0 +1,9 @@
+id: 1765
+title: Broken TLS certificate pinning in VTech DigiGo Kid Connect app
+year: 2017
+desc: Advisory for broken TLS certificate pinning in VTech DigiGo Kid Connect app that allows for a Man-in-the-Middle attack on the chat functionality.
+type: link
+section: Advisory
+keywords: advisory, VTech DigiGo, TLS, pinning
+link: https://www.securify.nl/en/advisory/SFY20170910/broken-tls-certificate-pinning-in-vtech-digigo-kid-connect-app.html
+content_file: 

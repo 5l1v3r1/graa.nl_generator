@@ -1,0 +1,9 @@
+id: 1820
+title: Programming the Razer Tartarus Chroma on Linux
+year: 2018
+desc: Program for using the Razer Tartarus Chroma on Linux because the normal drivers weren't working.
+type: link
+section: Programming
+keywords: python, programming
+link: https://github.com/DutchGraa/Razer-USB-tartarus
+content_file: 

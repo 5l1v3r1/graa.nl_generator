@@ -1,0 +1,9 @@
+id: 1762
+title: Multiple vulnerabilities in VTech DigiGo allow browser overlay attack
+year: 2017
+desc: Advisory for vulnerability that allows attackers to perform a persistent overlay attack on the browser app.
+type: link
+section: Advisory
+keywords: advisory, VTech DigiGo, browser, XSS
+link: https://www.securify.nl/en/advisory/SFY20170909/multiple-vulnerabilities-in-vtech-digigo-allow-browser-overlay-attack.html
+content_file: 

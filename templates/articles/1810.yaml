@@ -1,0 +1,9 @@
+id: 1810
+title: Postfix mail bot for helping setting up PGP encrypted mail
+year: 2018
+desc: Mailbot in Python for Postfix for setting up PGP encrypted mail.
+type: link
+section: Programming
+keywords: postfix, python, mail automation, pgp, crypto
+link: https://github.com/DutchGraa/PGPMailbot
+content_file: 

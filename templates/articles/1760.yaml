@@ -1,0 +1,9 @@
+id: 1760
+title: Broken TLS certificate validation in VTech DigiGo browser
+year: 2017
+desc: Advisory for broken TLS certificate validation in the VTech DigiGo browser.
+type: link
+section: Advisory
+keywords: advisory, VTech DigiGo, TLS
+link: https://www.securify.nl/en/advisory/SFY20170908/broken-tls-certificate-validation-in-vtech-digigo-browser.html
+content_file: 

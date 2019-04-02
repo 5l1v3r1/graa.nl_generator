@@ -1,0 +1,9 @@
+id: 1815
+title: Fixing this "couldn't get 'max filedescriptors'" error
+year: 2018
+desc: How I fixed the "couldn't get 'max filedescriptors'" error from Lighttpd.
+type: article
+section: Blog
+keywords: lighttpd, error, code fix
+link: 
+content_file: 1815.content.html

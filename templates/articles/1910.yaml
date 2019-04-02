@@ -1,0 +1,9 @@
+id: 1910
+title: Only log required data for WPA cracking (aircrack-ng / airodump)
+year: 2019
+desc: Patch for aurodump for only logging relevant data for WPA cracking.
+type: link
+section: Programming
+keywords: aircrack-ng, airodump, WPA, cracking
+link: https://github.com/DutchGraa/aircrack-ng/commit/ad349b9fcfa4bdcff864434b92d3c72881e3eabe
+content_file: 

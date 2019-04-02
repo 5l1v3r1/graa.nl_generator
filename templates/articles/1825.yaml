@@ -1,0 +1,9 @@
+id: 1825
+title: Self-replicating binary infecting Mach-O files
+year: 2018
+desc: Virus-making excercise for getting to know assembly, Mach-O binaries and how virusses work.
+type: link
+section: Programming
+keywords: virus, mach-o, OSX, assembly
+link: https://github.com/DutchGraa/simpvir
+content_file: 

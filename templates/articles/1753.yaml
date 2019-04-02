@@ -1,0 +1,9 @@
+id: 1753
+title: A journey into cracking RSA moduli with a common GCD
+year: 2017
+desc: In this article I share some experiences from cracking RSA moduli in bulk by exploiting the use of common GCDs.
+type: article
+section: Blog
+keywords: RSA, GCD, crypto, cracking, global
+link: 
+content_file: 1753.content.html
