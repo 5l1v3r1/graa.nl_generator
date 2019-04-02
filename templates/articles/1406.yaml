@@ -1,0 +1,9 @@
+id: 1406
+title: Glype proxy local address filter bypass
+year: 2014
+desc: Advisory for bypassing local address filters in the Glype web-based proxy that allows attacking the internal network of the proxy host.
+type: link
+section: Advisory
+keywords: advisory, ip filter, php
+link: https://www.securify.nl/advisory/SFY20140902/glype_proxy_local_address_filter_bypass.html
+content_file: 

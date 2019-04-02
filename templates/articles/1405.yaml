@@ -1,0 +1,9 @@
+id: 1405
+title: Glype proxy cookie jar path traversal allows code execution
+year: 2014
+desc: Advisory for path traversal vulnerability in the Glype web-based proxy that allows an attacker to run arbitrary PHP code on the server or remove critical files from the filesystem.
+type: link
+section: Advisory
+keywords: advisory, proxy, php, path traversal, code execution, web security
+link: https://www.securify.nl/advisory/SFY20140901/glype_proxy_cookie_jar_path_traversal_allows_code_execution.html
+content_file: 

@@ -1,0 +1,9 @@
+id: 1740
+title: Reflected Cross-Site Scripting in CM4ALL
+year: 2017
+desc: Advisory for Reflected Cross-Site Scripting in CM4ALL.
+type: article
+section: Advisory
+keywords: advisory, XSS, CM4ALL
+link: 
+content_file: 1740.content.html

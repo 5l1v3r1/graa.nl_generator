@@ -1,0 +1,9 @@
+id: 1708
+title: LazyFact - Factoring RSA moduli using basic methods
+year: 2017
+desc: Application to factorise an RSA modulus using very basic methods.
+type: link
+section: Programming
+keywords: python, c, rsa, gmp, openssl, factoring
+link: https://github.com/DutchGraa/LazyfactPython
+content_file: 

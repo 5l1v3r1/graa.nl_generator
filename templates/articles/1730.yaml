@@ -1,0 +1,9 @@
+id: 1730
+title: "Crackcoin: basic blockchain-free cryptocurrency PoC in Python"
+year: 2017
+desc: Crackcoin is a very basic blockchain-free cryptocurrency PoC in Python. It's a project for discovering cryptocurrencies.
+type: link
+section: Programming
+keywords: blockchain, python, ecc, crypto
+link: https://github.com/DutchGraa/crackcoin
+content_file: 

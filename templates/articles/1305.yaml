@@ -1,0 +1,9 @@
+id: 1305
+title: Hackerone DoS by GIF resize flooding
+year: 2013
+desc: Advisory for Denial of Service vulnerability in HackerOne via GIF image upload.
+type: link
+section: Advisory
+keywords: advisory, DoS, upload, parsing
+link: https://hackerone.com/reports/400
+content_file: 

@@ -1,0 +1,17 @@
+<article>
+
+  <header>
+    <h2><a href="[ARTICLE_LINK]">[ARTICLE_HEADER]</a></h2>
+  </header>
+
+  <p>[ARTICLE_DESCRIPTION]</p>   
+
+  <footer>
+    <small>
+      <p>
+        <time>[ARTICLE_YEAR]</time> - <keywords>[ARTICLE_KEYWORDS]</keywords>
+      </p>
+    </small>
+  </footer>
+
+</article>

@@ -1,6 +1,6 @@
 Reflected Cross-Site Scripting in CM4ALL
 
-Graa, July, 2017
+Graa, 
 
 Description
 
@@ -55,3 +55,5 @@ Timeline
 03-05-2017: CM4All notified company that update should be ready.
 05-06-2017: Upgrade postponed for 4 weeks, because critical bugs were found during first deployment.
 11-07-2017: Hotfix successfully rolled out.
+
+<small>July, 2017</small>

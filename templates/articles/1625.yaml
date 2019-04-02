@@ -1,0 +1,9 @@
+id: 1625
+title: Multiple vulnerabilities in All In One WP Security & Firewall plugin login CAPTCHA
+year: 2016
+desc: Advisory for Multiple vulnerabilities in All In One WP Security & Firewall plugin login CAPTCHA (Wordpress plugin).
+type: link
+section: Advisory
+keywords: advisory, summer of pwnage, wordpress, php
+link: https://sumofpwn.nl/advisory/2016/multiple_vulnerabilities_in_all_in_one_wp_security___firewall_plugin_login_captcha.html
+content_file: 

@@ -1,0 +1,9 @@
+id: 1628
+title: Persistent Cross-Site Scripting in WP Google Maps Plugin via CSRF
+year: 2016
+desc: Advisory for Persistent Cross-Site Scripting in WP Google Maps Plugin via CSRF (Wordpress plugin).
+type: link
+section: Advisory
+keywords: advisory, summer of pwnage, wordpress, php
+link: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_wp_google_maps_plugin_via_csrf.html
+content_file: 

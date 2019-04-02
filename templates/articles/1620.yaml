@@ -1,0 +1,9 @@
+id: 1620
+title: Command injection in InfiniteWP Admin Panel
+year: 2016
+desc: Advisory for Command injection in InfiniteWP Admin Panel (Wordpress plugin).
+type: link
+section: Advisory
+keywords: advisory, summer of pwnage, wordpress, php
+link: https://sumofpwn.nl/advisory/2016/command_injection_in_infinitewp_admin_panel.html
+content_file: 

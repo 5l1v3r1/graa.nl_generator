@@ -1,0 +1,9 @@
+id: 1720
+title: Instant negative hash cracking wordlist lookup
+year: 2017
+desc: Bloomhash - Instant negative hash cracking wordlist lookup
+type: link
+section: Programming
+keywords: python, hash cracking, bloom filter, wordlist
+link: https://github.com/DutchGraa/Bloomhash
+content_file: 

@@ -1,0 +1,6 @@
+site_config:
+  site_title: Graa - Security Blog
+  site_desc: Sipke's blog on security and technology
+  site_menu:
+    Blog
+    About

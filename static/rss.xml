@@ -6,6 +6,12 @@
   <link>https://www.graa.nl</link>
   <description>Sipke's tech log</description>
   <item>
+    <title>Simple libHackRF API example</title>
+    <link>https://gist.github.com/DutchGraa/a8c0b472392da212bf03b08f372a8f7d</link>
+	<category>Programming</category> 
+	<guid>https://gist.github.com/DutchGraa/a8c0b472392da212bf03b08f372a8f7d</guid> 
+</item>
+<item>
     <title>Only log required data for WPA cracking (aircrack-ng / airodump)</title>
     <link>https://github.com/DutchGraa/aircrack-ng/commit/ad349b9fcfa4bdcff864434b92d3c72881e3eabe</link>
 	<category>Programming</category> 

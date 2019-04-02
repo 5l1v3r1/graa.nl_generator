@@ -1,0 +1,9 @@
+id: 1629
+title: Weak validation of Amazon SNS push messages in W3 Total Cache WordPress Plugin
+year: 2016
+desc: Advisory for Weak validation of Amazon SNS push messages in W3 Total Cache (Wordpress plugin).
+type: link
+section: Advisory
+keywords: advisory, summer of pwnage, wordpress, php
+link: https://sumofpwn.nl/advisory/2016/weak_validation_of_amazon_sns_push_messages_in_w3_total_cache_wordpress_plugin.html
+content_file: 

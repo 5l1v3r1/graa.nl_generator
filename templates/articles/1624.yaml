@@ -1,0 +1,9 @@
+id: 1624
+title: Reflected Cross-Site Scripting vulnerability in W3 Total Cache plugin
+year: 2016
+desc: Advisory for Reflected Cross-Site Scripting vulnerability in W3 Total Cache plugin (Wordpress plugin).
+type: link
+section: Advisory
+keywords: advisory, summer of pwnage, wordpress, php
+link: https://securify.nl/advisory/SFY20160747/reflected-cross-site-scripting-vulnerability-in-w3-total-cache-plugin.html
+content_file: 

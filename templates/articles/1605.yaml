@@ -1,0 +1,9 @@
+id: 1605
+title: ASCII animations in terminal using curses
+year: 2016
+desc: Script for showing ascii animations in the terminal using the Python curses library.
+type: link
+section: Programming
+keywords: python, terminal, cuses, ascii
+link: https://github.com/DutchGraa/cursesAsciiAnimations
+content_file: 

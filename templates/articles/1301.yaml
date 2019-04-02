@@ -1,0 +1,9 @@
+id: 1301
+title: Hackerone DoS by JPG pixel flood
+year: 2013
+desc: Advisory for Denial of Service vulnerability in HackerOne via JPG image upload.
+type: link
+section: Advisory
+keywords: advisory, DoS, upload, parsing
+link: https://hackerone.com/reports/390
+content_file: 

@@ -4,7 +4,7 @@
 <channel>
   <title>Graa.nl RSS feed</title>
   <link>https://www.graa.nl</link>
-  <description>Sipke's tech log</description>
+  <description>[SITE_DESCRIPTION]</description>
   [RSS_ITEMS]
 </channel>
 
