@@ -2,10 +2,22 @@
 <rss version="2.0">
 
 <channel>
-  <title>Graa.nl RSS feed</title>
+  <title>Graa - Security Blog RSS feed</title>
   <link>https://www.graa.nl</link>
-  <description>Sipke's tech log</description>
+  <description>Sipke's blog on security and technology</description>
   <item>
+    <title>Contact</title>
+    <link>/articles/3099.html</link>
+	<category>About</category> 
+	<guid>/articles/3099.html</guid> 
+</item>
+<item>
+    <title>Meta</title>
+    <link>/articles/3001.html</link>
+	<category>About</category> 
+	<guid>/articles/3001.html</guid> 
+</item>
+<item>
     <title>Simple libHackRF API example</title>
     <link>https://gist.github.com/DutchGraa/a8c0b472392da212bf03b08f372a8f7d</link>
 	<category>Programming</category> 
@@ -20,38 +32,38 @@
 <item>
     <title>Loracrack - LoRaWAN session cracker</title>
     <link>https://github.com/DutchGraa/Loracrack</link>
-	<category>Hacking</category> 
+	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/Loracrack</guid> 
 </item>
 <item>
     <title>To set currents in motion</title>
-    <link>https://www.graa.nl/articles/1866-S.html</link>
-	<category>Security</category> 
-	<guid>https://www.graa.nl/articles/1866-S.html</guid> 
+    <link>/articles/1850.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1850.html</guid> 
 </item>
 <item>
-    <title>Secure Diffie–Hellman parameters for Lighttpd with SNI</title>
-    <link>https://www.graa.nl/articles/1830-R.html</link>
-	<category>Random</category> 
-	<guid>https://www.graa.nl/articles/1830-R.html</guid> 
+    <title>Secure Diffie-Hellman parameters for Lighttpd with SNI</title>
+    <link>/articles/1830.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1830.html</guid> 
 </item>
 <item>
     <title>Self-replicating binary infecting Mach-O files</title>
     <link>https://github.com/DutchGraa/simpvir</link>
-	<category>Hacking</category> 
+	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/simpvir</guid> 
 </item>
 <item>
     <title>Programming the Razer Tartarus Chroma on Linux</title>
     <link>https://github.com/DutchGraa/Razer-USB-tartarus</link>
-	<category>Hacking</category> 
+	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/Razer-USB-tartarus</guid> 
 </item>
 <item>
-    <title>Fixing this fucking "couldn't get 'max filedescriptors'" error</title>
-    <link>https://www.graa.nl/articles/1812-H.html</link>
-	<category>Hacking</category> 
-	<guid>https://www.graa.nl/articles/1812-H.html</guid> 
+    <title>Fixing this "couldn't get 'max filedescriptors'" error</title>
+    <link>/articles/1815.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1815.html</guid> 
 </item>
 <item>
     <title>Postfix mail bot for helping setting up PGP encrypted mail</title>
@@ -62,26 +74,26 @@
 <item>
     <title>Spot The Book</title>
     <link>https://github.com/DutchGraa/Spot-The-Book</link>
-	<category>Security</category> 
+	<category>Blog</category> 
 	<guid>https://github.com/DutchGraa/Spot-The-Book</guid> 
 </item>
 <item>
     <title>Spot The Bug challenge 2018 warm-up</title>
     <link>https://www.securify.nl/en/blog/SFY20180101/spot-the-bug-challenge-2018-warm-up.html</link>
-	<category>Hacking</category> 
+	<category>Blog</category> 
 	<guid>https://www.securify.nl/en/blog/SFY20180101/spot-the-bug-challenge-2018-warm-up.html</guid> 
 </item>
 <item>
     <title>Hoe begin je 2018 veilig op internet?</title>
-    <link>https://www.graa.nl/articles/1780-S.html</link>
-	<category>Security</category> 
-	<guid>https://www.graa.nl/articles/1780-S.html</guid> 
+    <link>/articles/1780.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1780.html</guid> 
 </item>
 <item>
     <title>Compiling a Monero miner on OSX</title>
-    <link>https://www.graa.nl/articles/1775-H.html</link>
-	<category>Hacking</category> 
-	<guid>https://www.graa.nl/articles/1775-H.html</guid> 
+    <link>/articles/1770.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1770.html</guid> 
 </item>
 <item>
     <title>Broken TLS certificate pinning in VTech DigiGo Kid Connect app</title>
@@ -103,39 +115,39 @@
 </item>
 <item>
     <title>Fixing the &lt;i&gt;critical software update&lt;/i&gt; OSX install message</title>
-    <link>https://www.graa.nl/articles/1770-R.html</link>
-	<category>Random</category> 
-	<guid>https://www.graa.nl/articles/1770-R.html</guid> 
+    <link>/articles/1755.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1755.html</guid> 
 </item>
 <item>
     <title>A journey into cracking RSA moduli with a common GCD</title>
-    <link>https://www.graa.nl/articles/1765-H.html</link>
-	<category>Hacking</category> 
-	<guid>https://www.graa.nl/articles/1765-H.html</guid> 
+    <link>/articles/1753.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1753.html</guid> 
 </item>
 <item>
-    <title>Stupid things people say</title>
-    <link>https://www.graa.nl/articles/1761-R.html</link>
-	<category>Random</category> 
-	<guid>https://www.graa.nl/articles/1761-R.html</guid> 
+    <title>Helpdesk - Stupid things people say</title>
+    <link>/files/HelpdeskCommunicatieRelease.pdf</link>
+	<category>Blog</category> 
+	<guid>/files/HelpdeskCommunicatieRelease.pdf</guid> 
 </item>
 <item>
     <title>Kobo Aura H2O hacking</title>
-    <link>https://www.graa.nl/articles/1760-H.html</link>
-	<category>Hacking</category> 
-	<guid>https://www.graa.nl/articles/1760-H.html</guid> 
+    <link>/articles/1748.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1748.html</guid> 
 </item>
 <item>
     <title>Added RSS feed</title>
-    <link>https://www.graa.nl/articles/1755-M.html</link>
-	<category>Meta</category> 
-	<guid>https://www.graa.nl/articles/1755-M.html</guid> 
+    <link>#</link>
+	<category>Blog</category> 
+	<guid>#</guid> 
 </item>
 <item>
     <title>Reflected Cross-Site Scripting in CM4ALL</title>
-    <link>https://www.graa.nl/articles/1753-ADV.html</link>
+    <link>/articles/1740.html</link>
 	<category>Advisory</category> 
-	<guid>https://www.graa.nl/articles/1753-ADV.html</guid> 
+	<guid>/articles/1740.html</guid> 
 </item>
 <item>
     <title>Buffer over-read vulnerability in Virtuozzo Power Panel (VZPP) and Automator</title>
@@ -144,7 +156,7 @@
 	<guid>https://www.securify.nl/advisory/SFY20170701/buffer-over-read-vulnerability-in-virtuozzo-power-panel-_vzpp_-and-automator.html</guid> 
 </item>
 <item>
-    <title>Crackcoin: very basic blockchain-free cryptocurrency PoC in Python</title>
+    <title>Crackcoin: basic blockchain-free cryptocurrency PoC in Python</title>
     <link>https://github.com/DutchGraa/crackcoin</link>
 	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/crackcoin</guid> 
@@ -158,17 +170,23 @@
 <item>
     <title>Spot The Bug challenge 2016 write-up</title>
     <link>https://www.securify.nl/blog/SFY20170103/spot-the-bug-challenge-2016-write-up.html</link>
-	<category>Hacking</category> 
+	<category>Blog</category> 
 	<guid>https://www.securify.nl/blog/SFY20170103/spot-the-bug-challenge-2016-write-up.html</guid> 
+</item>
+<item>
+    <title>LazyFact - Factoring RSA moduli using basic methods</title>
+    <link>https://github.com/DutchGraa/LazyfactPython</link>
+	<category>Programming</category> 
+	<guid>https://github.com/DutchGraa/LazyfactPython</guid> 
 </item>
 <item>
     <title>Spot The Bug challenge December 2016</title>
     <link>https://www.securify.nl/blog/SFY20161113/spot-the-bug-challenge-december-2016_-win-the-bitcoin_.html</link>
-	<category>Hacking</category> 
+	<category>Blog</category> 
 	<guid>https://www.securify.nl/blog/SFY20161113/spot-the-bug-challenge-december-2016_-win-the-bitcoin_.html</guid> 
 </item>
 <item>
-    <title>Simple threaded client/server sockets in Python </title>
+    <title>Threaded client/server sockets in Python</title>
     <link>https://github.com/DutchGraa/pythonNetworking</link>
 	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/pythonNetworking</guid> 
@@ -246,13 +264,7 @@
 	<guid>https://sumofpwn.nl/advisory/2016/command_injection_in_infinitewp_admin_panel.html</guid> 
 </item>
 <item>
-    <title>Lazyfact: factoring RSA moduli using basic methods</title>
-    <link>https://github.com/DutchGraa/LazyfactPython </link>
-	<category>Programming</category> 
-	<guid>https://github.com/DutchGraa/LazyfactPython </guid> 
-</item>
-<item>
-    <title>ascii animations in terminal using curses</title>
+    <title>ASCII animations in terminal using curses</title>
     <link>https://github.com/DutchGraa/cursesAsciiAnimations</link>
 	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/cursesAsciiAnimations</guid> 
@@ -266,13 +278,19 @@
 <item>
     <title>Spot The Bug challenge 2015 write-up</title>
     <link>https://www.securify.nl/blog/SFY20150601/spot-the-bug-challenge-2015-write-up.html</link>
-	<category>Hacking</category> 
+	<category>Blog</category> 
 	<guid>https://www.securify.nl/blog/SFY20150601/spot-the-bug-challenge-2015-write-up.html</guid> 
+</item>
+<item>
+    <title>Hackerone DoS by PNG compression</title>
+    <link>https://hackerone.com/reports/454</link>
+	<category>Advisory</category> 
+	<guid>https://hackerone.com/reports/454</guid> 
 </item>
 <item>
     <title>Spot The Bug challenge 2015 briefing</title>
     <link>https://www.securify.nl/blog/SFY20150501/spot-the-bug-challenge-2015-briefing.html</link>
-	<category>Hacking</category> 
+	<category>Blog</category> 
 	<guid>https://www.securify.nl/blog/SFY20150501/spot-the-bug-challenge-2015-briefing.html</guid> 
 </item>
 <item>
@@ -289,27 +307,15 @@
 </item>
 <item>
     <title>Trainpooling</title>
-    <link>https://www.graa.nl/articles/1702-H.html</link>
-	<category>Hacking</category> 
-	<guid>https://www.graa.nl/articles/1702-H.html</guid> 
-</item>
-<item>
-    <title>About</title>
-    <link>https://www.graa.nl/articles/1701-M.html</link>
-	<category>Meta</category> 
-	<guid>https://www.graa.nl/articles/1701-M.html</guid> 
+    <link>/articles/1401.html</link>
+	<category>Blog</category> 
+	<guid>/articles/1401.html</guid> 
 </item>
 <item>
     <title>Python library for creating PNG image data</title>
     <link>https://github.com/DutchGraa/CreatePNG</link>
 	<category>Programming</category> 
 	<guid>https://github.com/DutchGraa/CreatePNG</guid> 
-</item>
-<item>
-    <title>Hackerone DoS by PNG compression</title>
-    <link>https://hackerone.com/reports/454</link>
-	<category>Advisory</category> 
-	<guid>https://hackerone.com/reports/454</guid> 
 </item>
 <item>
     <title>Hackerone DoS by GIF resize flooding</title>

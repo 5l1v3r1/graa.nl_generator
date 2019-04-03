@@ -1,7 +1,0 @@
-id: 1840
-title: Secure Diffie-Hellman parameters for Lighttpd with SNI
-year: 2018
-desc: A proper SNI configuration for lighttpd DH parameters.
-type: article
-keywords: DH, lighttpd, configuration, SNI
-content_file: 1840.content.html
